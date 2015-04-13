@@ -4,8 +4,9 @@
  * 4/12/15
  */
 
+//this will get the last occurance of the number you are searching for
 function seqSearch(arr, data) {
-	for (var i = 0; i < arr.length; ++i) {
+	for (var i = arr.length; i > 0; --i) {
 		if (arr[i] == data) {
 			return i;
 		}
@@ -13,6 +14,7 @@ function seqSearch(arr, data) {
 	return -1;
 }
 
+//prints out the array of numbers so it is readable
 function dispArr(arr) {
 	for (var i = 0; i < arr.length; ++i) {
 		write(arr[i] + " ");
